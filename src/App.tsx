@@ -24,9 +24,6 @@ function App()
         <Route path="/tasklists" element={<ProtectedRoute><TaskListsPage /></ProtectedRoute>} />
         <Route path="/tasklists/:id" element={<ProtectedRoute><TasksPage /></ProtectedRoute>} />
         <Route path="/adminPanel" element={<AdminRoute><AdminPanelPage /></AdminRoute>} />
-        {/* <Route path="/tasklists" element={<TaskListsPage />} />
-        <Route path="/tasklists/:id" element={<TasksPage />} />
-        <Route path="/adminPanel" element={<AdminPanelPage />} /> */}
         <Route path="*" element={<NoMatchPage />} />
       </Routes>
     </>
